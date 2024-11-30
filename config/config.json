@@ -1,0 +1,16 @@
+{
+    "development": {
+      "username": "root",
+      "password": "",
+      "database": "dmarymua",
+      "host": "localhost",
+      "dialect": "mysql" 
+    },
+    "test": {
+      
+    },
+    "production": {
+    
+    }
+  }
+  

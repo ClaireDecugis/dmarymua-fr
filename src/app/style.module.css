@@ -1,0 +1,1587 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+#body {
+  margin: 0px !important;
+  height: 100%;
+}
+#next {
+  height: 100%;
+}
+/******** Navbar *******/
+.menu_burger {
+  display: none;
+}
+
+.nav_block {
+  background-color: #1d1d1d;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 0px 64px;
+}
+.nav_flex {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  list-style-type: none;
+  align-items: center;
+}
+.nav_link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: Montserrat;
+  transition: all 0.3s ease;
+}
+.nav_link:hover {
+  color: #d5a1cf;
+  text-decoration: underline;
+}
+.nav_link:focus {
+  color: #d5a1cf;
+  text-decoration: underline;
+}
+.dropdown {
+  position: absolute;
+  transition: all 0.3s ease;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #1d1d1d;
+  box-shadow: 8px 9px 8px 0px #000000;
+  margin-top: 14px;
+  border: 1px solid #000000;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px; /* ou la hauteur appropriée pour votre contenu */
+  }
+}
+.dropdown li {
+  list-style: none;
+}
+.dropdown li a {
+  color: #fff;
+  text-decoration: none;
+}
+/******** Footer *******/
+
+.footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 32px 64px 114px 64px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
+.logo_footer {
+  display: flex;
+  gap: 16px;
+}
+.list_footer {
+  list-style-type: none;
+}
+.block_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+/******** Audiovisuel *******/
+
+.audiovisuel_page {
+  font-family: "Montserrat", sans-serif;
+}
+.audiovisuel_page h1 {
+  text-align: center;
+}
+.audiovisuel_page h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.audiovisuel_title_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  font-family: "Montserrat", sans-serif;
+}
+.audiovisuel_title_flex a {
+  color: #d5a1cf;
+  font-weight: bold;
+  transition: ease all 0.3s;
+}
+.audiovisuel_title_flex a:hover {
+  color: #c284ba;
+}
+.audiovisuel_title_flex a:visited {
+  color: #c284ba;
+}
+.audiovisuel_line_title {
+  background: #e6e6e6;
+  width: 130px;
+  height: 1px;
+}
+.audiovisuel_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  padding: 0px 64px 64px;
+}
+.audiovisuel_flex img {
+  object-fit: none;
+  height: auto;
+}
+
+/******** Shooting *******/
+
+.shooting_page {
+  font-family: "Montserrat", sans-serif;
+}
+.shooting_page h1 {
+  text-align: center;
+}
+.title_category {
+  text-align: start;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.group_title_shooting {
+  padding-left: 125px;
+}
+.wedding_block_shooting_image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 124px;
+  transition: transform 0.6s;
+}
+
+.block_shooting_image,
+.wedding_block_shooting_image img {
+  transition: transform 0.6s;
+}
+.block_shooting_image:hover,
+.wedding_block_shooting_image img:hover {
+  transform: scale(1.2);
+}
+.shooting_content {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shooting_credit p {
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+}
+.figure {
+  margin: 0;
+  padding: 8px;
+}
+.block_caption_shooting {
+  background-color: #1d1d1dac;
+
+  opacity: 0;
+  font-size: 1em;
+  z-index: 2;
+  color: #faf6f5;
+  position: absolute;
+  bottom: 92px;
+  left: 8px;
+  right: 0;
+  width: 436px;
+  transition: opacity 0.5s ease;
+  padding: 32px;
+  text-align: center;
+}
+.block_shooting_image:hover .block_caption_shooting {
+  opacity: 1;
+  background-color: #1d1d1dac;
+}
+
+/******** Mariage *******/
+
+.wedding_page {
+  font-family: "Montserrat", sans-serif;
+}
+.wedding_page h1 {
+  text-align: center;
+}
+.nav_wedding_page {
+  background-color: #d5a1cf;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 0px 64px;
+}
+.nav_wedding_page a {
+  color: #1d1d1d;
+}
+.wedding_content {
+  padding: 64px 128px;
+}
+.wedding_block1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+}
+.wedding_block1 p {
+  font-size: 18px;
+}
+.wedding_block1_image {
+  height: auto;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wedding_block1_p {
+  text-align: center;
+  line-height: 2.1;
+  width: 50%;
+}
+.title_wedding_price {
+  font-size: 24px;
+}
+.title_wedding_price + p {
+  font-size: 18px;
+  text-align: center;
+}
+.widget_testimonial {
+  width: 100%;
+  padding-top: 24px;
+}
+.nav_wedding_page a:hover {
+  color: #1d1d1d;
+}
+.nav_wedding_page ul.visible:last-child {
+  background-color: #d5a1cfcd;
+  box-shadow: 8px 9px 8px 0px #ae9add;
+  margin-top: 14px;
+  border: 1px solid #bcabe0;
+}
+.nav_wedding_page ul:last-child a {
+  color: #1d1d1d;
+}
+.gallery_wedding_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 124px;
+  transition: transform 0.6s;
+}
+.gallery_wedding_container div img {
+  transition: transform 0.6s;
+}
+.gallery_wedding_container div img:hover {
+  transform: scale(1.2);
+}
+
+/******** Tarifs *******/
+
+.tarifs_page {
+  font-family: "Montserrat", sans-serif;
+}
+
+.group_block_tarifs {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  padding: 0px 128px 64px;
+}
+.block_tarifs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 124px;
+}
+/* .block_tarifs:nth-child(odd) {
+  flex-direction: row;
+} */
+.block_tarifs_image {
+  width: 30%;
+  transition: transform 0.6s;
+}
+.block_tarifs_image:hover {
+  transform: scale(1.2);
+}
+.block_tarifs_data {
+  width: 30%;
+}
+.block_tarifs_data p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+.group_button_tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.button_tarifs {
+  color: #1d1d1d;
+  padding: 24px;
+  background: #d5a1cf;
+  border-radius: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all ease 0.6s;
+}
+.button_tarifs:hover {
+  background: #c284ba;
+  color: #faf6f5;
+}
+.tarifs_professionals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarifs_professionals p:last-child {
+  font-style: italic;
+}
+
+/******** Contact *******/
+
+.contact_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+.group_contact_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 128px;
+}
+.contact_content p {
+  padding-bottom: 64px;
+}
+.form_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 600px;
+}
+.input_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input_contact input,
+.input_contact textarea,
+.input_contact_calendar,
+.form_calendar_admin input,
+.form_calendar_admin select {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 14px;
+}
+.button_group {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+.button_group_flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact_contain {
+  padding: 0px 64px;
+}
+.form_contact button,
+.button_group button,
+.button_contact_calendar {
+  padding: 16px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 196px;
+  font-weight: 600;
+  transition: ease all 0.6s;
+}
+.form_contact button:hover,
+.button_group button:hover,
+.button_contact_calendar:hover {
+  background: #d5a1cf;
+  color: #1d1d1d;
+}
+.form_contact button:focus,
+.button_group button:focus,
+.button_contact_calendar:focus {
+  background: #d5a1cf;
+  color: #1d1d1d;
+  box-shadow: inset -3px 2px 20px -2px #ae9add;
+}
+
+.available-day {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.unavailable-day {
+  color: gray;
+  cursor: not-allowed;
+}
+.calendar_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.group_calendar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+.container_calendar_group_flex {
+  width: 600px;
+}
+.container_input_calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+.rbc-toolbar {
+  flex-wrap: nowrap;
+}
+.button_contact_calendar_disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.confirmation_message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/******** contact admin *******/
+.container_calendar_admin {
+  padding: 32px 64px;
+}
+.container_calendar_admin::-webkit-scrollbar {
+  width: 0px;
+}
+.form_calendar_admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.subtitle_calendar_admin {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 16px;
+}
+.group_button_calendar_admin {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.group_input_calendar_admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.group_button_calendar_admin .button_add_availability:hover {
+  padding: 16px;
+  background: #198754;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.group_button_calendar_admin .button_update_availability:hover {
+  padding: 16px;
+  background: #d5a1cf;
+  color: #1d1d1d;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.group_button_calendar_admin .button_delete_availability:hover {
+  padding: 16px;
+  background: #dc3545;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.group_button_calendar_admin button {
+  padding: 16px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.table_calendar_admin {
+  border-collapse: collapse;
+}
+
+.list_table_contact_admin {
+  list-style: none;
+}
+.table_calendar_admin th,
+.table_calendar_admin tbody td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table_calendar_admin_none {
+  border: none !important;
+}
+.table_calendar_admin_group_button {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.table_calendar_admin_group_button button:first-child {
+  padding: 16px;
+  background: #198754;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: 184px;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.table_calendar_admin_group_button button:last-child {
+  padding: 16px;
+  background: #dc3545;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+
+/******** FAQ *******/
+
+.faq_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.group_faq_flex {
+  padding-bottom: 64px;
+}
+.faqItem {
+  border: 1px solid #1d1d1d38;
+  padding: 16px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faqItem.opened {
+  border: 1px solid #1d1d1d;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question div {
+  font-size: 32px;
+}
+.question:hover div {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+.question h2 {
+  font-weight: 400;
+  margin: 0px;
+  font-size: 20px;
+}
+.answer {
+  font-size: 18px;
+}
+.answer span {
+  text-decoration: underline;
+}
+.answer a {
+  color: #d5a1cf;
+  font-weight: bold;
+  transition: ease all 0.3s;
+}
+.answer a:hover {
+  color: #c284ba;
+}
+.answer a:visited {
+  color: #c284ba;
+}
+.question.clicked:hover div {
+  transform: rotate(-275deg);
+  transition: transform 0.5s ease;
+}
+.clicked h2 {
+  font-weight: 500;
+}
+
+/*****Admin Navbar******/
+
+.sidebar {
+  position: fixed; /* Position fixe pour la barre de navigation */
+  top: 0;
+  left: 0; /* La barre de navigation est alignée à gauche */
+  width: 250px;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Hauteur de la barre de navigation */
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar::-webkit-scrollbar,
+.sidebar ul::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 96px;
+  padding: 64px 24px;
+  margin: 0px;
+  overflow: auto;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  transition: ease all 0.3s;
+  font-weight: 500;
+}
+.sidebar a:hover {
+  color: #d5a1cf;
+}
+.sidebar a:focus {
+  color: #d5a1cf;
+}
+
+.sidebar > .dropdown {
+  gap: 32px !important;
+}
+
+/*****Admin Information******/
+.container {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.information_form {
+  width: 100%;
+}
+.form_information_personal_flex {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 32px;
+}
+.form_information_personal_flex div {
+  display: flex;
+  flex-direction: column;
+}
+.form_information_personal_content {
+  display: flex;
+  justify-content: center;
+}
+.form_information_personal_flex div input {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 14px;
+}
+
+.form_information_personal_flex div label {
+  font-weight: 500;
+}
+
+.form_information_personal_flex button {
+  padding: 16px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 196px;
+  font-weight: 600;
+  transition: ease all 0.6s;
+}
+.form_information_personal_flex button:hover {
+  background: #d5a1cf;
+  color: #1d1d1d;
+}
+
+/*****Admin Pied de page******/
+
+.content_footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 128px;
+}
+.column_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.column_footer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.column_footer h2 {
+  margin: 0px;
+  padding-bottom: 16px;
+}
+.group_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.group_input input {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 14px;
+}
+
+.group_input label {
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.group_input_button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.group_input_button button:first-child {
+  padding: 16px;
+  background: #198754;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 76px;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.group_input_button button:first-child:hover {
+  background: #36db8e;
+}
+.group_input_button button:last-child {
+  padding: 16px;
+  background: #dc3545;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 76px;
+  font-weight: 500;
+  transition: ease all 0.6s;
+}
+.group_input_button button:last-child:hover {
+  background: #ff5969;
+}
+.button_footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+}
+
+.button_footer button {
+  padding: 16px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 196px;
+  font-weight: 600;
+  transition: ease all 0.6s;
+}
+.button_footer button:hover {
+  background: #d5a1cf;
+  color: #1d1d1d;
+}
+
+/*****Connexion******/
+.login_container {
+  height: 100vh;
+}
+.login_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.login_content {
+  background: #dedede;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 9px 20px gray;
+}
+.login_content form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.login_content input {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 8px 16px;
+}
+.login_content button {
+  padding: 8px 16px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 196px;
+  font-weight: 600;
+  transition: ease all 0.6s;
+}
+
+.login_content button:hover {
+  background: #d5a1cf;
+  color: #1d1d1d;
+}
+/*****Admin ******/
+.container_page_admin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 94px;
+}
+.container_page_admin::-webkit-scrollbar {
+  width: 0px;
+}
+/*****Admin Accueil******/
+.container_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accuei_admin_flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.group_accueil_admin {
+  display: flex;
+  flex-direction: column;
+}
+.sub_group_accueil_admin {
+  display: flex;
+  gap: 128px;
+}
+.accueil_admin_spacement {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.group_input textarea {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.accueil_admin_spacement_last {
+  display: flex;
+  gap: 128px;
+}
+
+/******** Accueil *******/
+.background_title_home {
+  background-image: url("../../public/images/MUAH-16.jpg");
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  background-position: top;
+}
+.group_title_home_flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 615px;
+}
+.group_title_home {
+  display: flex;
+  flex-direction: column;
+}
+
+.group_title_image_home {
+  width: 100%;
+  height: auto;
+}
+.title_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 85px;
+}
+.title_home h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 64px;
+}
+.home_line_title {
+  background: rgba(255, 255, 255, 0.44);
+  width: 325px;
+  height: 2px;
+}
+.group_paragraph {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.group_paragraph p {
+  color: rgba(255, 255, 255, 0.84);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.group_paragraph button {
+  padding: 16px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  transition: ease all 0.6s;
+  font-weight: 600;
+}
+.group_paragraph button:hover {
+  background-color: #d5a1cf;
+  border: 2px solid #d5a1cf;
+  color: #1d1d1d;
+}
+.redirect_faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  font-size: 18px;
+  text-align: center;
+}
+.redirect_faq a {
+  color: #d5a1cf;
+  font-weight: bold;
+  transition: ease all 0.3s;
+}
+.redirect_faq a:hover {
+  color: #c284ba;
+}
+.redirect_faq a:visited {
+  color: #c284ba;
+}
+.about_home {
+  padding: 0px 378px;
+}
+
+.about_home h2 {
+  text-align: center;
+  margin: 0px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.about_home_flex {
+  display: flex;
+  gap: 74px;
+  width: 100%;
+  align-items: center;
+}
+.about_home_paragraph {
+  width: 75%;
+}
+.about_home_paragraph p {
+  line-height: 1.9;
+}
+.img_slider_home {
+  display: flex !important;
+  justify-content: center;
+}
+.img_slider_home img {
+  object-fit: contain;
+}
+.slider_home {
+  height: 300px;
+}
+.trust_home {
+  padding: 64px 128px;
+}
+.trust_home h3 {
+  text-align: center;
+  padding-bottom: 64px;
+}
+.trust_home p {
+  padding-top: 112px;
+  font-weight: 600;
+  line-height: 1.9;
+  text-align: center;
+}
+
+/******** Component Table *******/
+
+.image_content_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 32px;
+}
+
+.image_item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #0000004d;
+  width: 700px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.image_list_component {
+  min-height: 1100px;
+}
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.pagination_active {
+  border: 3px solid #d5a1cf;
+  font-size: 21px;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+.btn_img_supp {
+  padding: 16px;
+  background: #ff5969;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  align-self: center;
+  width: 156px;
+  font-weight: 600;
+  transition: ease all 0.6s;
+  margin-right: 24px;
+}
+.btn_img_supp:hover {
+  background-color: #c43341;
+  cursor: pointer;
+}
+.search_img_supp {
+  border-radius: 15px;
+  border: 1px solid #adadad;
+  background: #fff;
+  padding: 14px;
+  width: 600px;
+}
+
+/******** Media Query *******/
+
+@media screen and (max-width: 1024px) {
+  .audiovisuel_title_flex {
+    padding-bottom: 24px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .audiovisuel_flex {
+    gap: 0px;
+  }
+  .audiovisuel_page h2:nth-child(8) {
+    position: relative;
+    bottom: 25px;
+  }
+  .audiovisuel_page h2:nth-child(12) {
+    position: relative;
+    bottom: 30px;
+  }
+  .audiovisuel_page h2:nth-child(14) {
+    position: relative;
+    bottom: -30px;
+  }
+  .group_contact_content {
+    padding: 64px;
+    gap: 94px;
+  }
+  .group_calendar,
+  .contact_content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shooting_content {
+    padding: 0;
+  }
+  .footer {
+    margin-top: 64px;
+  }
+  .wedding_content {
+    padding: 0px;
+  }
+  .group_block_tarifs {
+    padding: 0;
+    gap: 94px;
+  }
+  .tarifs_professionals {
+    padding: 0px 64px;
+  }
+  .audiovisuel_title_flex {
+    padding-bottom: 24px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .group_calendar,
+  .contact_content {
+    width: 100%;
+  }
+  .group_contact_content {
+    padding: 0 64px;
+    flex-direction: column;
+  }
+  .about_home {
+    padding: 0px 32px;
+  }
+
+  .block_caption_shooting {
+    background-color: #1d1d1d;
+    display: block;
+    font-size: 1em;
+    z-index: 2;
+    color: #faf6f5;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    width: 468px;
+    padding: 16px;
+  }
+  .block_shooting_image:hover,
+  .wedding_block_shooting_image img:hover,
+  .gallery_wedding_container div img:hover {
+    transform: revert;
+  }
+  .block_shooting_image:hover .block_caption_shooting {
+    display: block;
+    padding: 16px;
+    background-color: #1d1d1d;
+  }
+  .colonne1,
+  .colonne2,
+  .colonne3 {
+    flex-basis: 50%; /* 2 columns on tablet */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* .sidebar {
+    width: 5px;
+  } */
+  .nav_flex {
+    display: none;
+  }
+  .menu_burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .burger_line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  .burger_line::before {
+    transform: translateY(-6px);
+  }
+
+  .burger_line::after {
+    transform: translateY(6px);
+  }
+
+  .nav_active {
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    height: 130vh;
+    background: #1d1d1d;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-bottom: 34px;
+    align-items: stretch;
+  }
+
+  ul.dropdown {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    /* z-index: 99; */
+    flex-direction: column;
+  }
+
+  ul.dropdown li {
+    padding-top: 24px;
+  }
+
+  ul.dropdown li a {
+    color: #ffff;
+    text-decoration: none;
+  }
+  .about_home {
+    padding: 0px;
+  }
+  .about_home h2 {
+    padding: 42px 0px;
+  }
+  .about_home_flex {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .about_home_flex img {
+    width: 150px;
+    height: 150px;
+  }
+  .background_title_home {
+    height: 100vh;
+  }
+  .filter_image {
+    top: -510px;
+    height: 100vh;
+  }
+  .title_home h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+  }
+  .home_line_title {
+    width: 215px;
+  }
+  .group_title_home {
+    gap: 128px;
+  }
+  .trust_home {
+    padding: 0;
+  }
+  .audiovisuel_flex {
+    padding: 0;
+    gap: 0;
+  }
+  .audiovisuel_page h1 {
+    font-size: 24px;
+    padding: 32px 16px 0 16px;
+  }
+  .audiovisuel_title_flex {
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  .audiovisuel_flex {
+    padding-bottom: 64px;
+  }
+  .audiovisuel_flex .slick-slider .slick-dots {
+    bottom: 8px !important;
+  }
+  .audiovisuel_page h2:nth-child(12) {
+    position: relative;
+    bottom: 30px;
+  }
+  .audiovisuel_page h2:nth-child(14) {
+    position: relative;
+    top: 35px;
+  }
+  .footer {
+    flex-direction: column;
+    margin-top: 64px;
+  }
+  .block_shooting_image {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .shooting_content {
+    padding: 0;
+  }
+  .wedding_content {
+    padding: 0;
+  }
+  .wedding_block1_image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wedding_block1 {
+    flex-direction: column;
+  }
+  .wedding_block1_p {
+    width: 100%;
+  }
+  .widget_testimonial {
+    padding: 32px 0px;
+  }
+  .nav_wedding_page a {
+    color: #e6e6e6;
+  }
+  .group_block_tarifs {
+    padding: 0px;
+    gap: 64px;
+  }
+  .block_tarifs {
+    flex-direction: column;
+  }
+  .block_tarifs_image {
+    width: 100%;
+  }
+  .block_tarifs_data {
+    width: 100%;
+  }
+  .block_tarifs:nth-child(odd) {
+    flex-direction: column;
+  }
+  .shooting_page h1,
+  .audiovisuel_title_flex h1 {
+    padding: 32px 16px 0 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .group_contact_content {
+    padding: 0;
+  }
+  .group_contact_content {
+    flex-direction: column;
+  }
+  .contact_content,
+  .group_calendar {
+    width: 100%;
+  }
+  .dropdown {
+    box-shadow: none;
+    margin-top: 0;
+    border: none;
+    padding: 8px 14px;
+    gap: 0px;
+  }
+  .nav_wedding_page .nav_flex {
+    background-color: #d5a1cf;
+  }
+
+  .nav_wedding_page ul.visible:last-child {
+    box-shadow: none;
+    margin-top: 0;
+    border: none;
+  }
+  .nav_wedding_page ul:last-child a {
+    color: #1d1d1d;
+  }
+  .nav_wedding_page .menu_burger .burger_line {
+    background-color: #1d1d1d;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav_block {
+    padding: 0px 0px 0px 0px;
+    width: auto;
+  }
+  .title_home h1 {
+    font-size: 48px;
+  }
+  .group_paragraph {
+    padding: 0 12px;
+  }
+  .trust_home {
+    padding-top: 72px;
+  }
+  .nav_link {
+    padding: 10px 0;
+  }
+  .nav_active {
+    height: 100vh;
+  }
+  .slick-slide {
+    width: 320px;
+  }
+  .audiovisuel_flex img {
+    width: 320px;
+  }
+
+  .audiovisuel_page h2 {
+    padding: 0px 16px;
+  }
+  .audiovisuel_page h2:nth-child(8) {
+    padding-top: 24px;
+  }
+  .audiovisuel_page h2:nth-child(10) {
+    margin-top: -4px;
+  }
+  .audiovisuel_page h2:nth-child(12) {
+    padding-top: 20px;
+  }
+  .audiovisuel_page h2:nth-child(14) {
+    margin-top: -55px;
+  }
+  .shooting_image_unique,
+  .gallery_wedding_container div img {
+    width: 300px !important;
+  }
+  .block_caption_shooting {
+    background-color: #1d1d1d;
+    display: block;
+    font-size: 1em;
+    z-index: 2;
+    color: #faf6f5;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    width: 268px;
+    padding: 16px;
+  }
+  .block_shooting_image:hover,
+  .wedding_block_shooting_image img:hover,
+  .gallery_wedding_container div img:hover {
+    transform: revert;
+  }
+  .block_shooting_image:hover .block_caption_shooting {
+    display: block;
+    padding: 16px;
+    background-color: #1d1d1d;
+  }
+  .gallery_wedding_container {
+    padding-top: 34px;
+  }
+  .wedding_block1 p {
+    font-size: 16px;
+    padding: 0px 22px;
+  }
+  .nav_wedding_page {
+    padding: 0;
+  }
+  .block_tarifs {
+    gap: 24px;
+  }
+  .block_tarifs_data p {
+    font-size: 16px;
+    padding: 0px 16px;
+  }
+  .block_tarifs_data h2 {
+    padding: 0px 26px;
+  }
+  .tarifs_professionals {
+    align-items: flex-start;
+    padding: 0px 32px;
+  }
+  .button_tarifs {
+    padding: 18px 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .button_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .background_title_home {
+    background-image: url("../../public/images/MUAH-5.jpg");
+  }
+}

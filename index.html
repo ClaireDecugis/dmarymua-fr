@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let table = []
+        console.log(table)
+        for (let index = 1; index < 11; index++) {
+            table.push(index)
+            console.log("boucle1"+' ' + table);
+        }
+
+        function oddEven(table) {
+            return table.filter(number => number % 2 === 0);
+            console.log(table)
+        }
+
+        let numberOdd = oddEven(table);
+        console.log("numberOdd" + ' ' + numberOdd)
+
+        document.body.innerHTML = "Les nombres pairs entre 1 et 10 sont : " + numberOdd.join(", ");
+
+    </script>
+</body>
+</html>
